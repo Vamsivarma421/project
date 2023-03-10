@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>VARMA  school of excellence</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" sizes="10*10">
+    <!-- https://inquisitive-douhua-886769.netlify.app/ -->
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="main.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="mainpage">
+         <header class="open" >
+            <div class="mainlogo">
+                    <img class="logoimg"src="logo.jpg" >
+            </div>
+            <div class="navitemsgroup">
+                <ul class="navitems">
+                    <li><a href="main.html"><ion-icon name="home"></ion-icon> Home</a></li>
+                    <li><a href="social.html"><i class="fa-solid fa-hands-holding-child"></i> Social commitment</a></li>
+                    <li><a href="alumini.html"><i class="fa-solid fa-user-graduate"> </i>Alumni</a></li>
+                    <li><a href="contactus.html"><ion-icon name="call"></ion-icon> Contact us</a></li>
+                    <li><a href="mainlogin.html"><ion-icon name="log-in-outline"></ion-icon> Login</a></li>   
+                </ul>
+            </div>
+            <ion-icon name="menu-outline" class="menutoggle"></ion-icon>
+        </header>
+        <script>
+            let navitems = document.querySelector('.menutoggle');        
+            let menutoggle =document.querySelector('.menutoggle');
+            let header = document.querySelector('header');
+            menutoggle.onclick =function(){
+                header.classList.toggle('open');
+            }
+        </script>
+        <!-- queries -->
+        <div class="mainhomearea">
+            <!-- query banner -->
+            <div class="banner">
+                <div class="bannercontainer">
+                    <img id="i1" src="logo.jpg" />
+                </div>
+                <!-- script for banner -->
+                <script>
+                    var i=0
+                    var arr=["logo.jpg","school2.jpg","school1.jpg","lastpic.jpg","result.png" ,"bud.jpg"]                               
+                function fun3(){                                  
+                 i++                  
+                    if(i>=arr.length){
+                      i=0
+                    }                   
+                    console.log(i)
+                    document.getElementById("i1").src=arr[i]
+                  }                               
+                 setInterval(fun3,2000)                   
+                   </script>
+                   
+                <!-- completed -->
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            <a href="about.html">about</a>
+                        </li>
+                        <li>
+                            <p class="droptitle"onclick="dropdown1()">acheivements <i class="fa-solid fa-chevron-down"></i></p>
+                            <div id="dropmenu1"class="dropmenu">
+                              <ul class="dropmenucontent">
+                                <li><a href="10thclass.html">10<sup>th</sup>class</a></li>
+                              </ul>  
+                            </div>
+                        </li>
+                        <li>
+                            <p  class="droptitle" onclick="dropdown()">admissions <i  class="fa-solid fa-chevron-down"></i></p>
+                            <div id="dropmenu" class="dropmenu">
+                                <ul class="dropmenucontent">
+                                    <li><a href="addprocess.html">admissions process</a></li>
+                                    <li><a href="enquiry.html">Enquiry </a></li>
+                                </ul>
+                            </div>     
+                        </li>
+                        <li>
+                            <p  class="droptitle" onclick="dropdown2()" >events <i class="fa-solid fa-chevron-down"></i></p>
+                            <div id="dropmenu2"class="dropmenu">
+                                <ul class="dropmenucontent">
+                                    <a href="puttur.html">puttur</a>
+                                    <a href="tirupathi.html">tirupati</a>
+                                    <a href="srikalahasti.html">srikalahasthi</a>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <p  class="droptitle" onclick="dropdown3()">facilities  <i class="fa-solid fa-chevron-down"></i></p>
+                            <div id="dropmenu3"class="dropmenu">
+                                <ul class="dropmenucontent">
+                                    <a href="lab.html">lab</a>
+                                    <a href="library.html">library</a>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="sport.html">sports</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+             <script>
+                var value1=0
+                function dropdown(){
+                let adm =document.getElementById("dropmenu")
+                if(value1%2!=0){
+                    adm.style.display='none'
+                }
+                else{
+                    adm.style.display='block'
+                }
+                value1=value1+1
+                }
+                function dropdown1(){
+                let ach =document.getElementById("dropmenu1")
+                if(value1%2!=0){
+                    ach.style.display='none'
+                }
+                else{
+                    ach.style.display='block'
+                }
+                value1=value1+1
+                }
+                function dropdown2(){
+                let ev =document.getElementById("dropmenu2")
+                if(value1%2!=0){
+                    ev.style.display='none'
+                }
+                else{
+                    ev.style.display='block'
+                }
+                value1=value1+1
+                }
+                function dropdown3(){
+                let fa =document.getElementById("dropmenu3")
+                if(value1%2!=0){
+                    fa.style.display='none'
+                }
+                else{
+                    fa.style.display='block'
+                }
+                value1=value1+1
+                }
+             </script> 
+            <!-- querry banner completed -->
+            <!-- content -->
+            <div class="maincontent">
+                <div class="container">
+                    <div class="content">
+                        <p>We had only one target in mind. 'An outgoing student of Gowtham should carry with him the profound knowledge of the fundamentals of the subject that will enable him get a brilliant rank in the competitive exams like IIT, AIEEE, BITSAT, EAMCET, JIPMER etc.' Before choosing a school for a kid, the parents have to ask the school management only one question point blank as to "How many old students of that school secured ranks in the competitive examinations like IIT, AIEEE, BITSAT, EAMCET, JIPMER etc?" The standard of a school can be assessed depending upon these ranks only.
+
+                        </p>
+                        <p>It is the responsibility of the school to keep track of the past-school record of their alumni. The school management should be in a position to tell the prospective parent as to what has become of their students as regards to the rank in the competitive examinations as it has direct bearing on what the school has sown and what are the fruits, the plants did bear.
+
+                        </p>
+                        <div class="morecontent" id="morecontent">
+                            <p>Boasting about the 10th class totals and trying to allure the parents with th ose marks is hoodwinking and deceit. But, by and large, even the educated parents are falling prey for 10th class totals. Parents are forgetting the fact that the 10th class totals and the rank in competitive test have no relation what so ever. We are well aware of the required subject concepts and grip on subject fundamentals which are prerequisites for good rank in competitive tests. We have twenty years of rich and long experience in the field of competitive tests and that was evident when we secured state and national ranks time and again.
+
+                            </p>
+                           
+                        </div>
+                        <span class="readmore" onclick="read()" id="readmore">read more <i class="fa-solid fa-chevron-down"></i></span>
+                        
+                    </div>
+                    <!-- script for readmore -->
+                    <script>
+                    var value1=0
+                    function read(){
+                    let read=document.getElementById("readmore")
+                    let adm =document.getElementById("morecontent")
+                    if(value1%2!=0){
+                    adm.style.display='none'
+
+                    }
+                    else{
+                    adm.style.display='block'
+                    read.style.display="block"
+                    }
+                    value1=value1+1
+                    }
+                    
+                    </script>
+                    <!-- completed -->
+                    <div class="gridbox">
+                        <div>  
+                            <div class="drop drop0">
+                                <div class="dropcontainer">
+                                    <i class="fa-sharp fa-solid fa-hand-holding-heart"></i>
+                               <p>we are giving education that needed to live in this society with some moral values...</p>
+                               <a href="society.html">know more <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="drop drop1">
+                               <div class="dropcontainer">
+                                <i class="fa-solid fa-robot"></i>
+                                <p>Robotics now in Varma, Learn and play with all robots...</p>
+                                <a href="robotics.html">learn more <i class="fa-solid fa-chevron-right"></i></a>
+                               </div>
+                            </div>
+                            <div class="drop drop2">
+                                <div class="dropcontainer">
+                                    <i class="fa-solid fa-face-smile"></i>
+                                <p>our institutes get  better results then other institions...  </p>
+                                <a href="10thclass.html">know more <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="drop drop3">
+                                <div class="dropcontainer">
+                                    <i class="fa-solid fa-right-to-bracket"></i>  
+                                <p>We are looking for experienced faculty in the fields of Mathematics, Physics...</p>
+                                <a href="oppor.html">know more <i class="fa-solid fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="facilities">
+                        <div class="facilitiesheader">
+                            <p>facilities</p>
+                        </div>
+                        <div class="facilitiescontainer">
+                            <div class="facilitiesprovided">
+                                <a href="lab.html"><img src="https://tse3.mm.bing.net/th?id=OIP.gD9Sr4kKHi36Ne8HB7uAfQHaE8&pid=Api&P=0" alt=""></a>
+                                <div>
+                                    <p class="title">lab</p>
+                                    <p>
+                                        Audio Visual Lab & Technological Centre finds place at Varma <sub>School excellence</sub> that has the latest systems with a very healthy student computer ratioaudiovis...
+                                    </p>
+                                    <a href="lab.html">know more <i class="fa-solid fa-chevron-right"></i></a>
+
+                                </div>
+                            </div>
+                            <div class="facilitiesprovided">
+                                <div>
+                                    <p class="title">transportion</p>
+                                    <p>
+                                        School Location Varma <sub>school of excellence</sub> an educational institution with a difference established in tirupathi, is a very aesthetically desi...
+
+                                    </p>
+                                    <a href="transportion.html">know more <i class="fa-solid fa-chevron-right"></i></a>
+
+                                </div>
+                                <a href="transportion.html"><img src="http://www.kkrgowtham.com/wp-content/themes/twentytwelve/images/transport.png" alt=""></a>
+
+                            </div>
+                            <div class="facilitiesprovided">                                
+                                <a href="sport.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtgoWdbUGkr2Y3aDnSMRkVM3xKV8Zg1DTFmg&usqp=CAU" alt=""></a>
+                                <div>
+                                    <p class="title">sports</p>
+                                    <p>
+                                        An individual sport is an ideal way of releasing the energy creatively. It also provides an outlet for a well-directed release of emotions in a positive....
+
+
+                                    </p>
+                                    <a href="sport.html">know more <i class="fa-solid fa-chevron-right"></i></a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- bottombar -->
+        <div class="bottombar">
+            <div class="barcontainer">
+                <div class="barhome">
+                    <h3>HOME</h3>
+                    <a href="social.html">Social commitment</a>
+                    <a href="contactusbranches.html"> Branches</a>
+                    <a href="contactusquery.html">queries\suggestions</a>
+                </div>
+                <div class="baradm"><h3>ADDMISSIONS</h3>
+                    <a href="addprocess.html">addmission process</a>
+                    <a href="enquiry.html"> Enquiry</a>
+                </div>
+                <div class="barabout">
+                    <h3>ABOUT</h3>
+                    <a href="about.html">about us</a>
+                </div>
+                <div class="barevent">
+                    <h3>EVENTS</h3>
+                    <a href="puttur.html">puttur</a>
+                    <a href="tirupathi.html">tirupati</a>
+                    <a href="srikalahasti.html">srikalahasthi</a>
+                </div>
+                <div class="barfac">
+                    <h3>facilities</h3>
+                    <a href="lab.html">lab</a>
+                    <a href="library.html">labrary</a>
+                </div>
+                <div class="barconnect">
+                    <h3>CONNECT WITH US</h3>
+                    <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/login?lang=en"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://accounts.google.com/ServiceLogin?ltmpl=mobNH"><i class="fa-brands fa-square-google-plus"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&#169;<span>2015</span> VARMA <span>school of excellence</span></p>
+                
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,183 @@
+.mainqueryarea{
+    width: 100%;
+    min-height: 150vh;
+   background-color:#dee1e2;
+   position: relative;
+   top:10vh ;
+}
+.mainqueryarea .banner{
+    width: 100%;
+    height: 35vh;
+    background-color: aqua;
+    border-bottom: 2px solid gold;
+    
+}
+.banner .bannercontainer{
+    width: 70%;
+    height: 60%;
+    position: relative;
+    top: 15%;
+    left: 15%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.bannercontainer p,.bannercontainer i{
+    font-size: 6em;
+    color: darkgray;
+    background: -webkit-linear-gradient(70deg,rgba(192, 18, 18, 0.855),rgba(0, 128, 0, 0.4),#818384, rgba(0, 0, 255, 0.263) ,rgba(186, 8, 91, 0.751));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+.bannercontainer i{
+    position: relative;
+    top: 12%;
+    font-size:7em ;
+}
+.banner  .dropdown{
+    width: 70%;
+    height: 10%;
+    background-color:transparent;
+    position: relative;
+    top:30% ;
+    left: 10%;
+    /* display: flex;
+    justify-content: space-around; */
+}
+.dropdown ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown ul .droptitle{
+    background-color: transparent;
+    border: none;
+    font-size: 1.25em;
+    /* width: 20%; */
+    color: #818384;
+    cursor: pointer;
+    
+}
+.dropdown ul a{
+    text-decoration: none;
+    font-size: 1.30em;
+    color: #818384;
+    /* margin-bottom: 4%; */
+    position: relative;
+    bottom: 1%;
+}
+ .dropmenu{
+display: none;
+}
+.dropdown ul .droptitle:hover {
+    color: black;
+}
+.dropdown ul a:hover{
+    color: black;
+
+}
+/* .droptitle:hover .dropmenu{
+    visibility: visible;
+} */
+.dropdown ul .dropmenu .dropmenucontent {
+display: flex;
+flex-direction: column;
+background: #f6f7f8;
+position: relative;
+top: 20%;
+text-align: center;
+border-radius: 5%;
+} 
+.dropdown ul .dropmenu .dropmenucontent a{
+    font-size: 1.1em;
+}
+/* responsivesness to banner */
+@media (max-width:900px) {.banner  .dropdown{
+    width: 95%;
+    position: relative;
+    left: 0;
+    margin-left: 2.5%;
+}
+
+.dropdown ul .droptitle{
+    margin-right: 2%;
+    font-size: 0.80em;
+    padding-top: 5%;
+}
+.dropdown ul a{
+    font-size: 0.80em;
+}
+.dropdown ul .dropmenu .dropmenucontent a{
+    font-size: 0.75em;
+}
+   
+    .banner .bannercontainer p{
+        font-size: 2em;
+        position: relative;
+        top: 10%;
+
+    }
+    .banner .bannercontainer i{
+        font-size: 3em;
+    } 
+    .banner .bannercontainer{
+        width: 100%;
+        display: flex;
+    justify-content: space-around;
+    position: relative;
+        left: 0;
+        
+    }
+    .mainqueryarea .banner{
+        height: 20vh;
+    }
+}
+
+/* content */
+.maincontent{
+    height: 100vh;
+    width: 100%;
+
+
+}
+.container{
+    height: 80%;
+    width: 80%;
+    background: #fff;
+    position: relative;
+    left: 10%;
+    top: 15%;
+    
+}
+.container .header{
+    height:10% ;
+    width: 100%;
+    background-color: #8183847e;
+    color: black;
+    
+}
+.header p{
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 800;
+    padding-top:1% ;
+}
+.container .queryform{
+    display: flex;
+    justify-content: center;
+}
+.queryform form label{
+    color: black;
+    font-weight: 500;
+    
+}
+@media (max-width:950px) {
+    .maincontent{
+        height: 100vh;
+        width: 100%;
+    
+    
+    }
+    
+}

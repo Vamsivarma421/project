@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap'); 
+
+*{
+    font-family: 'poppins',sans-serif ;
+    margin: 0;
+
+}
+.loginarea{
+    height:90vh;
+    position: absolute;
+    top: 10%;
+ width: 100%;
+ background-color:#223241;
+}
+.loginarea .area{
+    height: 30%;
+    width: 20%;
+    position: relative;
+    left: 40%;
+    top: 25%;
+    box-shadow: 0px 15px 15px #333;
+    border-radius: 5%;
+    background-color: antiquewhite;
+}
+.loginarea .area .mainloginbtn{
+    width: 80%;
+    height: 30%;
+    border-radius: 25px;
+    margin-bottom: 6%;
+    margin-left: 10%;
+    border: 2px solid burlywood;
+    border: 2px solid #00dfc4;
+
+}
+.loginarea .area .mainloginbtn a{
+    text-decoration: none;
+font-size: 1.25em;
+font-weight: 700;
+letter-spacing: 0.20em;
+color: #333;
+
+
+}
+.loginarea .area .mainloginbtn a i{
+color: coral;
+}
+.loginarea .area .mainlogintitle p{
+    font-size: 1.25em;
+    
+    font-weight: 800;
+    
+    color:black;
+    position: relative;
+    left: 15%;
+}
+.loginarea .area .mainlogintitle{
+    background-color: #00dfc4;
+    border-radius: 10px  10px 0 0;
+    margin-bottom: 2%;
+}
+/* responiveness */
+@media (max-width:950px) {
+    .loginarea{
+        height: 90%;
+        width: 100%;
+        background-color:#223241;
+
+    }
+
+ .loginarea .area{
+    height: 50%;
+    width: 70%;
+    position: relative;
+    left: 15%;
+    top: 50%;
+ }
+ .loginarea .area .mainlogintitle p{
+    font-size: 1.3em;
+    
+    font-weight: 800;
+    
+    color:black;
+    position: relative;
+    left: 10%;
+}
+.loginarea .area .mainlogintitle{
+    background-color: #00dfc4;
+    border-radius: 15px  15px 0 0;
+    margin-bottom: 5%;
+}
+.loginarea .area .mainloginbtn{
+    margin-bottom: 10%;
+}
+}

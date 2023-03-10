@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.teacherloginpage{
+    position: absolute;
+    top: 11%;
+    width:100%;
+   min-height: 90vh;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #223243;
+
+}
+.logincontainer{
+/* display: flex;
+justify-content: center;
+align-items: center; */
+width: 33%;
+/* min-height: 85vh; */
+border-radius: 20px;
+border: 8px solid #223243;
+box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1) ,5px 5px 15px rgba(0, 0, 0, 0.35) ,
+inset -5px -5px 15px rgba(255, 255, 255, 0.1) ,
+inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+ .signup{
+
+    width: 100%;
+    padding: 40px;
+    
+} 
+
+
+
+.logincontainer .teacherform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+
+
+}
+.logincontainer .teacherform.signin,.logincontainer.teachersigninform .teacherform.signup{
+    display: none;
+}
+.logincontainer.teachersigninform .teacherform.signin{
+    display: flex;
+
+}
+.logincontainer .teacherform h2{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    /* position: relative;
+    left: 25%;
+    top: -15px; */
+
+}
+.logincontainer .teacherform .inputbox{
+    position: relative;
+    width: 300px;
+    height: 10%;
+
+}
+.logincontainer .teacherform .inputbox input{
+    padding: 12px 10px 12px 48px;
+    border: none;
+    width: 100%;
+    background-color: #223243;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-weight: 300;
+    font-size: 1em;
+    border-radius: 25px;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1) ,5px 5px 15px rgba(0, 0, 0, 0.35);
+    transition: 0.5s;
+    outline: none;
+    
+}
+.logincontainer .teacherform .inputbox span{
+     position: absolute;
+    left: 0; 
+    padding: 12px 10px 12px 48px;
+    pointer-events: none;
+    font-size: 1em;
+    font-weight: 300;
+    transition: 0.5s;
+    letter-spacing: 0.05em;
+    color: rgba(255, 255, 255, 0.5);
+}
+.logincontainer .teacherform .inputbox input :valid ~ span,
+.logincontainer .teacherform .inputbox input:focus ~span{
+color: #00dfc4;
+border: 2px solid #00dfc4;
+background-color: #223243;
+transform: translateX(25px) translateY(-7px);
+font-size: 0.6em;
+padding: 0 8px;
+border-radius: 10px;
+letter-spacing: 0.1em;
+}
+.logincontainer .teacherform .inputbox input :valid ,
+.logincontainer .teacherform .inputbox input:focus {
+    border: 2px solid #00dfc4;
+}
+.logincontainer .teacherform .inputbox i{
+    position: absolute;
+    left: 5%;
+    top: 29%;
+    width: 9%;
+    
+    padding-right: 10px;
+    color: #00dfc4;
+    border-right: 2px solid #00dfc4;
+}
+.logincontainer .teacherform .inputbox input[type="submit"]{
+    background-color: #00dfc4;
+    color: #223243;
+    padding: 10px 0;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.1) ,5px 5px 15px rgba(0, 0, 0, 0.35) ,
+inset -5px -5px 15px rgba(255, 255, 255, 0.1) ,
+inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+
+}
+.logincontainer .teacherform p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.75em;
+    font-weight: 300;
+}
+.logincontainer .teacherform p a{
+    color: #fff;
+    font-weight: 500;
+}
+/* responsiveness */
+@media (max-width:950px) {
+.logincontainer{
+    width: 70%;
+}
+.logincontainer .teacherform .inputbox{
+    width: 100%;
+}
+  
+.logincontainer .teacherform .inputbox input{
+    padding:10px 50px;
+}
+.logincontainer .teacherform .inputbox span{
+    padding: 9px 45px;
+    font-size: 0.75em;
+}
+.logincontainer .teacherform .inputbox i{
+    padding: 0 15px 0 0;
+    /* padding-right: 5px; */
+}
+}

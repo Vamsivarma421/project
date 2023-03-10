@@ -1,0 +1,380 @@
+.mainhomearea{
+    width: 100%;
+    min-height: 290vh;
+   background-color:#dee1e2;
+   position: relative;
+   top:10vh ;
+}
+.mainhomearea .banner{
+    width: 100%;
+    height: 70vh;
+    background: rgba(160, 164, 164, 0.268);
+    border-bottom: 5px solid gold;
+    background-color: #b0ede3;
+    
+}
+.banner .bannercontainer{
+    width: 80%;
+    height: 70%;
+    position: relative;
+    top: 13%;
+    left: 10%;
+    background: #fff;
+    
+}
+img{
+    width: 100%;
+    height: 100%;
+   }
+
+.banner  .dropdown{
+    width: 70%;
+    height: 10%;
+    background-color:transparent;
+    position: relative;
+    top:25% ;
+    left: 10%;
+    /* display: flex;
+    justify-content: space-around; */
+}
+.dropdown ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown ul .droptitle{
+    background-color: transparent;
+    border: none;
+    font-size: 1.25em;
+    /* width: 20%; */
+    color: #818384;
+    cursor: pointer;
+    
+}
+.dropdown ul a{
+    text-decoration: none;
+    font-size: 1.30em;
+    color: #818384;
+    /* margin-bottom: 4%; */
+    position: relative;
+    bottom: 1%;
+}
+ .dropmenu{
+display: none;
+}
+.dropdown ul .droptitle:hover {
+    color: black;
+}
+.dropdown ul a:hover{
+    color: black;
+
+}
+/* .droptitle:hover .dropmenu{
+    visibility: visible;
+} */
+.dropdown ul .dropmenu .dropmenucontent {
+display: flex;
+flex-direction: column;
+background: #f6f7f8;
+position: relative;
+top: 20%;
+text-align: center;
+border-radius: 5%;
+} 
+.dropdown ul .dropmenu .dropmenucontent a{
+    font-size: 1.1em;
+}
+/* responsivesness to banner */
+@media (max-width:900px) {
+    .banner  .dropdown{
+        width: 95%;
+        position: relative;
+        left: 0;
+        margin-left: 2.5%;
+    }
+    
+    .dropdown ul .droptitle{
+        margin-right: 2%;
+        font-size: 0.80em;
+        padding-top: 5%;
+    }
+    .dropdown ul a{
+        font-size: 0.80em;
+    }
+    .dropdown ul .dropmenu .dropmenucontent a{
+        font-size: 0.75em;
+    }
+    .banner .bannercontainer p{
+        font-size: 2em;
+        position: relative;
+        top: 10%;
+
+    }
+    .banner .bannercontainer i{
+        font-size: 3em;
+    } 
+    .banner .bannercontainer{
+        width: 100%;
+        display: flex;
+    justify-content: space-around;
+    position: relative;
+        left: 0;
+        
+    }
+    .mainqueryarea .banner{
+        height: 20vh;
+    }
+}
+
+/* content */
+.maincontent{
+    height: 180vh;
+    width: 100%;
+
+
+}
+.container{
+    height: 100%;
+    width: 94%;
+    /* background: #fff; */
+    position: relative;
+    left:3%;
+    top: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow:  -10px -10px 15px rgba(255, 255, 255, 0.1) ,10px 10px 15px rgba(0, 0, 0, 0.35) ,
+    inset -10px -10px 15px rgba(255, 255, 255, 0.1) ,
+    inset 10px 10px 15px rgba(0, 0, 0, 0.35);;
+    border-radius: 1%;
+}
+.container .content{
+    width: 40%;
+    margin-left: 3%;
+    margin-top: 1%;
+
+}
+.container .content p{
+    text-align: justify;
+    padding-right: 2%;
+}
+.content .morecontent{
+    display: none;
+}
+.content .readmore{
+   
+    color: blue;
+
+}
+.content .readmore .fa-chevron-up{
+display: none;
+}
+.content .readmore:hover{
+    text-decoration: underline;
+}
+.container .gridbox{
+    width: 55%;
+    height: 49%;
+    margin-top: 1%;
+    background: linear-gradient(200deg, #f2c9c9, #cbe2d8, #decaf2,#fafbc6);
+   border-radius: 3%;
+   margin-bottom: 1%;
+}
+.gridbox div{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.gridbox div .drop{
+    width: 300px;
+    height: 250px;
+    margin-top: 5%;
+    transition-duration: 3s;
+    border-radius:16% 62% 25% 79% / 45% 43% 56% 53%   ;
+    box-shadow:  -10px -10px 15px rgba(255, 255, 255, 0.1) ,10px 10px 15px rgba(0, 0, 0, 0.35) ,
+    inset -10px -10px 15px rgba(255, 255, 255, 0.1) ,
+    inset 10px 10px 15px rgba(0, 0, 0, 0.35);;
+    border: 4px solid gold;
+}
+
+
+.gridbox div .drop:hover{
+    border-radius:18% 15% 17% 17% / 19% 16% 15% 18%  ;
+    
+    box-shadow:  35px 35px 60px #8f8f8f,
+                -35px -35px 60px #ffffff,
+                -35px 35px 60px #8f8f8f,
+                35px -35px 60px #ffffff,
+                35px -35px 60px #8f8f8f,
+                -35px 35px 60px #ffffff;
+}
+.gridbox div .drop1{
+    background:  #cbe2d8;
+
+}
+.gridbox   div .drop1:hover{
+    background: linear-gradient(225deg, #e5fff8, #c1ddd1);
+}
+.gridbox  div  .drop0{
+    background:   #f2c9c9;
+    margin-right: 5%;
+}
+.gridbox  div  .drop0:hover{
+    background: linear-gradient(225deg, #ffe7e7, #d6c2c2);
+}
+.gridbox  div  .drop2{
+    background:#decaf2  ;
+    margin-right: 5%;
+
+}
+.gridbox  div  .drop2:hover{
+    background: linear-gradient(225deg, #f6e5ff, #cfc1dd);
+}
+.gridbox  div  .drop3{
+    background: #fafbc6 ;
+
+}
+.gridbox  div  .drop3:hover{
+    background: linear-gradient(225deg, #ffffe3, #dedebf);
+}
+.drop .dropcontainer{
+position: relative;
+left: 10%;
+width: 90%;
+
+}
+.drop .dropcontainer .fa-robot,.fa-right-to-bracket,.fa-hand-holding-heart,.fa-face-smile{
+    font-size: 2em;
+    color: #7e8fe2;
+
+    height: 15%;
+    box-shadow:   inset 2px 2px 6px #ab9180,
+    inset -2px -2px 6px #e7c5ae;
+     border: 2px solid gold;
+     position: relative;
+     left: 30%;
+     top: 10%;
+}
+.drop .dropcontainer p{
+    color: #fff;
+    font-size: 1.02em;
+}
+.drop .dropcontainer a{
+    color: #fff;
+    position: relative;
+    bottom: 10%;
+    text-decoration: none;
+}
+.drop3 .dropcontainer p, a{
+    color: #8f8f8f;
+}
+.drop3 .dropcontainer  a{
+    color: #8f8f8f;
+}
+/* grid completed */
+
+.container .facilities{
+    width: 80%;
+    height: 45%;
+    border-radius: 2%;
+    position: relative;
+    left: 10%;
+}
+.facilities .facilitiesheader{
+    height: 10%;
+    background-color: #7e8fe2;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.facilitiesheader p{
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+}
+.facilities .facilitiescontainer{
+    height: 90%;
+    width: 100%;
+    background: #ab9180;
+    border-radius: 0 0 9px 9px;
+    border: 5px solid #7e8fe2;
+    display: flex;
+}
+.facilitiescontainer .facilitiesprovided{
+height: 100%;
+width: 33.33%;
+background-color:#f10990;
+}
+
+.facilitiesprovided a img{
+    width: 100%;
+    height: 49%;
+}
+.facilitiesprovided div{
+    height: 50%;
+    width: 100%;
+    background: #f10990;
+}
+.facilitiesprovided div p,a{
+    color: #fff;
+    text-align: center;
+
+}
+.facilitiesprovided div .title{
+    font-size: 2em;
+    
+}
+.facilitiesprovided div a{
+    text-decoration: none;
+    margin-left: 35%;
+}
+/* responisiveness content */
+@media (max-width:900px) {
+    .mainhomearea{
+        height: 450vh;
+    }
+    .container .content{
+        width: 100%;
+    }
+    .container{
+        height: 100%;
+        position: relative;
+       
+        top: 3%;
+    }
+    .maincontent{
+        height:350vh;
+    }
+    .gridbox div .drop{
+        width: 200px;
+        height: 250px;
+        margin-top: 5%;
+        transition-duration: 3s;
+        border-radius:16% 62% 25% 79% / 45% 43% 56% 53%   ;
+        box-shadow:  -10px -10px 15px rgba(255, 255, 255, 0.1) ,10px 10px 15px rgba(0, 0, 0, 0.35) ,
+        inset -10px -10px 15px rgba(255, 255, 255, 0.1) ,
+        inset 10px 10px 15px rgba(0, 0, 0, 0.35);;
+        border: 4px solid gold;
+    }
+    .container .gridbox{
+        width: 96%;
+        height: 27%;
+        position: relative;
+        left: 2%;
+    }
+    .container .facilities{
+        height: 30%;
+    }
+    .facilitiesprovided div p,a{
+        font-size: 0.75em;
+    }
+    .facilitiesprovided div a{
+        margin-left: 10%;
+    }
+
+    .facilitiesprovided div .title{
+        font-size: 1.25em;
+        color: #333;
+    }
+}
+
+
+

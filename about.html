@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>VARMA  school of excellence</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" sizes="10*10">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="main.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="mainpage">
+         <header class="open" >
+            <div class="mainlogo">
+                    <img class="logoimg"src="logo.jpg" >
+            </div>
+            <div class="navitemsgroup">
+                <ul class="navitems">
+                    <li><a href="index.html"><ion-icon name="home"></ion-icon> Home</a></li>
+                    <li><a href="social.html"><i class="fa-solid fa-hands-holding-child"></i> Social commitment</a></li>
+                    <li><a href="alumini.html"><i class="fa-solid fa-user-graduate"> </i>Alumni</a></li>
+                    <li><a href="contactus.html"><ion-icon name="call"></ion-icon> Contact us</a></li>
+                    <li><a href="mainlogin.html"><ion-icon name="log-in-outline"></ion-icon> Login</a></li>   
+                </ul>
+            </div>
+            <ion-icon name="menu-outline" class="menutoggle"></ion-icon>
+        </header>
+        <script>
+            let navitems = document.querySelector('.menutoggle');        
+            let menutoggle =document.querySelector('.menutoggle');
+            let header = document.querySelector('header');
+            menutoggle.onclick =function(){
+                header.classList.toggle('open');
+            }
+        </script>
+        <!-- queries -->
+        <div class="mainaboutarea">
+            <!-- query banner -->
+            <div class="banner">
+                <div class="bannercontainer">
+                    <div class="title"><p>About</p></div>
+                    <div class="logo"> <i class="fa-solid fa-building-columns"></i></div>
+                </div>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            <a href="about.html">about</a>
+                        </li>
+                        <li>
+                            <p class="droptitle"onclick="dropdown1()">acheivements <i class="fa-solid fa-chevron-down"></i></p>
+                            <div id="dropmenu1"class="dropmenu">
+                              <ul class="dropmenucontent">
+                                <li><a href="10thclass.html">10<sup>th</sup>class</a></li>
+                              </ul>  
+                            </div>
+                        </li>
+                        <li>
+                            <p  class="droptitle" onclick="dropdown()">admissions <i  class="fa-solid fa-chevron-down"></i></p>
+                            <div id="dropmenu" class="dropmenu">
+                                <ul class="dropmenucontent">
+                                    <li><a href="addprocess.html">admissions process</a></li>
+                                    <li><a href="enquiry.html">Enquiry </a></li>
+                                </ul>
+                            </div>     
+                        </li>
+                        <li>
+                            <p  class="droptitle" onclick="dropdown2()" >events <i class="fa-solid fa-chevron-down"></i></p>
+                            <div id="dropmenu2"class="dropmenu">
+                                <ul class="dropmenucontent">
+                                    <a href="puttur.html">puttur</a>
+                                    <a href="tirupathi.html">tirupati</a>
+                                    <a href="srikalahasti.html">srikalahasthi</a>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <p  class="droptitle" onclick="dropdown3()">facilities  <i class="fa-solid fa-chevron-down"></i></p>
+                            <div id="dropmenu3"class="dropmenu">
+                                <ul class="dropmenucontent">
+                                    <a href="lab.html">lab</a>
+                                    <a href="library.html">library</a>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="sport.html">sports</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+             <script>
+                var value1=0
+                function dropdown(){
+                let adm =document.getElementById("dropmenu")
+                if(value1%2!=0){
+                    adm.style.display='none'
+                }
+                else{
+                    adm.style.display='block'
+                }
+                value1=value1+1
+                }
+                function dropdown1(){
+                let ach =document.getElementById("dropmenu1")
+                if(value1%2!=0){
+                    ach.style.display='none'
+                }
+                else{
+                    ach.style.display='block'
+                }
+                value1=value1+1
+                }
+                function dropdown2(){
+                let ev =document.getElementById("dropmenu2")
+                if(value1%2!=0){
+                    ev.style.display='none'
+                }
+                else{
+                    ev.style.display='block'
+                }
+                value1=value1+1
+                }
+                function dropdown3(){
+                let fa =document.getElementById("dropmenu3")
+                if(value1%2!=0){
+                    fa.style.display='none'
+                }
+                else{
+                    fa.style.display='block'
+                }
+                value1=value1+1
+                }
+             </script> 
+            <!-- querry banner completed -->
+            <!-- content -->
+             <div class="maincontent">
+                <div class="container">
+                    <p class="title">About VARMA</p>
+                    <p class="para">
+                        We had only one target in mind. ‘An outgoing student of Our school should carry with him the profound knowledge of the fundamentals of the subject that will enable him get a brilliant rank in the competitive exams like IIT, AIEEE, BITSAT, EAMCET, JIPMER etc.’ Before choosing a school for a kid, the parents have to ask the school management only one question point blank as to “How many old students of that school secured ranks in the competitive examinations like IIT, AIEEE, BITSAT, EAMCET, JIPMER etc?” The standard of a school can be assessed depending upon these ranks only. It is the responsibility of the school to keep track of the past-school record of their alumni. The school management should be in a position to tell the prospective parent as to what has become of their students as regards to the rank in the competitive examinations as it has direct bearing on what the school has sown and what are the fruits, the plants did bear. Boasting about the 10th class totals and trying to allure the parents with th ose marks is hoodwinking and deceit. But, by and large, even the educated parents are falling prey for 10th class totals. Parents are forgetting the fact that the 10th class totals and the rank in competitive test have no relation what so ever. We are well aware of the required subject concepts and grip on subject fundamentals which are prerequisites for good rank in competitive tests. We have twenty years of rich and long experience in the field of competitive tests and that was evident when we secured state and national ranks time and again. (The record of ranks is included in this book). When we started the school, we had IIT Ramaiah’s test in mind as we can prove ourselves on the wonders the conceptual teaching can do (as it takes only two years to get the result). If we have to await IIT result, it will take 4 years to prove ourselves. That is why we have chosen to send our students for IIT Ramaiah’s test which any way is an acid test to know whether the student has IIT caliber or not.
+
+                    </p>
+                    <p class="para">
+                        Coming to Maths, we concentrated on Olympiad problems. Our students followed the mathematical magazines published by AMTI (Madras). In Physics, we followed “Concepts of Physics” by H.C.Verma. And as per Chemistry, we followed “Problems in Chemistry” by Bahadur and Arihanth Series. It is a pretty well known fact that these are the books followed in IIT coaching in Intermediate. But our students could follow these books two years ahead of the time. Apart from the books mentioned, our students followed the EAMCET and AIEEE books in 8th, 9th, 10th classes. While teaching, we taught the concepts meticulously, slowly and repeatedly until they understood the concepts thoroughly. We saw to it that they were able to apply those concepts in solving the assignments.
+
+                    </p>
+                    <p class="para">
+                        To start with, we took one chapter each from Maths, Physics and Chemistry and taught them taking good number of hours. We supplied some assignments on that chapter and gave ample time to solve those problems. We clarified the doubts and conducted an examination on that chapter in each subject. Depending upon those marks we categorized the students into three batches. Level C (foundation for IIT) coaching is given to highly meritorious students. Level B (foundation for AIEEE, BITSAT, EAMCET) coaching is given to the next best. Level A (confining to the prescribed text books only) coaching is given to mediocre students. The toughness of the coaching given is in accordance with the grasping caliber of the student. If we do not segregate the students depending upon their I.Q, the IIT foundation would be a burden and create mental pressure.
+
+                    </p>
+                    <p class="para">
+                        Through this conceptual teaching, a student gets trained in analytical thinking, quick grasping, academic affinity and creativity. What with his razor sharp memory and proactive attitude the student becomes highly aggressive in application side. A teacher gives the inputs only. The students gathers all the concepts, equips himself with logical, analytical, creative, and lateral thinking and works like a computer in problem solving methods. In this regard, more often than not, the student gives surprises by solving most complicated problems.
+
+                    </p>
+                    <p class="para">
+                        It is as much fortunate for a teacher to get a good student as it is for a student to get a good teacher. Acharya Drona, the famous mythological archery coach for blue blood could become so famous, only because he could get a brilliant student like Arjuna. Had Drona happened to have students like Bheema, we would never have learnt about Acharya Drona.
+
+
+                    </p>
+                    <p class="para">
+                        During the days of coaching, we used to count the chickens even before they were hatched. We thought that if we secured about ten to twelve ranks from a single school it would trigger tremors in the academic world. We didn’t have the slightest idea even as to what outcome our hard work and perseverance had kept in store for us. But the moment, we came to know that we secured 44 ranks in IIT Ramaiah’s test, we exulted over and felt as if we had conquered the world. We experienced the euphoria and total bliss. We did not expect the hither-to hibernating success would spring a surprise that would ensue an academic Tsunami. The true prospective of this result will be comprehended when one knows the fact that no school in India ever produced students of IIT caliber for more than single digit in the history of the schools. I am indebted to the parents of these students and I congratulate all my staff for their dedication and endeavour and I bless my students that they should scale greatest heights in their career and they should go places. They gave me enough success by which I can unequivocally claim that Gowtham Concept School is the best in the country in IIT foundation.
+
+
+
+                    </p>
+                    
+                </div>
+             </div>
+        </div>
+        <div class="bottombar">
+            <div class="barcontainer">
+                <div class="barhome">
+                    <h3>HOME</h3>
+                    <a href="social.html">Social commitment</a>
+                    <a href="contactusbranches.html"> Branches</a>
+                    <a href="contactusquery.html">queries\suggestions</a>
+                </div>
+                <div class="baradm"><h3>ADDMISSIONS</h3>
+                    <a href="addprocess.html">addmission process</a>
+                    <a href="enquiry.html"> Enquiry</a>
+                </div>
+                <div class="barabout">
+                    <h3>ABOUT</h3>
+                    <a href="about.html">about us</a>
+                </div>
+                <div class="barevent">
+                    <h3>EVENTS</h3>
+                    <a href="puttur.html">puttur</a>
+                    <a href="tirupathi.html">tirupati</a>
+                    <a href="srikalahasti.html">srikalahasthi</a>
+                </div>
+                <div class="barfac">
+                    <h3>facilities</h3>
+                    <a href="lab.html">lab</a>
+                    <a href="library.html">labrary</a>
+                </div>
+                <div class="barconnect">
+                    <h3>CONNECT WITH US</h3>
+                    <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/login?lang=en"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://accounts.google.com/ServiceLogin?ltmpl=mobNH"><i class="fa-brands fa-square-google-plus"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&#169;<span>2015</span> VARMA <span>school of excellence</span></p>
+                
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+</html>

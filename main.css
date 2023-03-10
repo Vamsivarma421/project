@@ -1,0 +1,227 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap'); 
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'poppins',sans-serif ;
+
+}
+.mainpage{
+    
+    width: 100%;
+   min-height: 100vh;
+  background-color: #dee1e2;
+}
+header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 80px;
+    background:#fff ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 15px rgba(0 ,0, 0,0.05);
+    z-index: 10;
+
+}
+.logoimg{
+    height: 100%;
+    width: 55%;
+    
+}
+.mainlogo{
+    height: 100%;
+    width: 30%;
+ 
+}
+.navbargroup{
+display: flex;
+align-items: center;
+}
+header ul{
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a:last-child{
+    margin-right: 15px;
+
+}
+header ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1em;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+
+}
+header ul li :last-child{
+    margin-right: 10px;
+
+} 
+header ul li a::before{
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: #333;
+    transform: scaleX(0);
+    transition: transform 0.5s ease-in-out;
+    transform-origin:right ;
+
+}
+header ul li a:hover::before{
+ transform-origin:left ;  
+ transform: scaleX(1);
+}
+/* responsiveness to navbar   */
+.menutoggle{
+    position: relative;
+    font-size: 1.2em;
+    display: none; 
+
+}
+@media  (max-width:950px){
+    .mainpage{
+        width: 100%;
+       min-height: 100vh;
+
+    }
+   
+    .menutoggle{
+        position: absolute;
+        bottom:20px;
+        display: block;
+        font-size: 2em;
+        cursor: pointer;
+        left: 90%;
+        transform: translateX(10px);
+    }
+.mainpage header .navitems{
+position: absolute;
+visibility: hidden;
+opacity: 0;
+}
+.mainpage header.open .navitems{
+    top:80px;
+    opacity: 1;
+    visibility: visible;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    width: 100%;
+    height: 50vh;
+    padding: 40px;
+    z-index: 10;
+    border-top: 1px solid rgba(0, 0, 0, 0.142);
+}
+}
+/* navbar is completed */
+/* banner */
+
+/* bottombar */
+.bottombar{
+    min-height: 50vh;
+    width:100%;
+    background: #4c4d4e;
+    position: relative;
+    
+}
+.bottombar .barcontainer{
+    width: 80%;
+   min-height:60% ;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-bottom: 2px solid gold;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr  ;
+    column-gap: 20px;
+    
+}
+.barcontainer  a{
+    font-size: 1em;
+    text-decoration: none;
+    color: #b8bebef5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    display: block;
+}
+.barcontainer h3{
+    text-align: center;
+    color: #f6f7f8;
+    padding-bottom: 10%;
+}
+.barcontainer a:hover{
+    color: #fff;
+}
+.barconnect a{
+    font-size: 1.5em;
+    display: inline;
+    padding: 5%;
+
+
+}
+.barconnect {
+    height:55%;
+    border-left:2px solid gold ;
+}
+.bottombar .copyright{
+    width: 60%;
+    height: 10vh;
+    position: absolute;
+    left: 10%;
+    bottom: 10%;
+    
+}
+.bottombar .copyright p{
+    margin-top: 2%;
+    color: #fff;
+}
+.copyright p span{
+    font-size: 0.75em;
+}
+/* responsiveness to botombar */
+@media (max-width:950px) {
+    .bottombar{
+        min-height: 100vh;
+    width:100%;
+    background: #4c4d4e;
+    position: relative;
+    
+    }
+    .bottombar .barcontainer{
+
+        min-height: 30%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows:1/2fr   ;
+    }
+    .copyright{
+        position: relative;
+        left: 10%;
+        bottom: 5%;
+        height: 5vh;
+        padding-top: 17%;
+         
+    }
+    .barcontainer h3{
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .barconnect{
+        border: none;
+    }
+    .barconnect a{
+        text-align: center;
+        
+    }
+
+}

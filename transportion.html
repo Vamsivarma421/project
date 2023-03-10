@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>VARMA  school of excellence</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" sizes="10*10">
+    <link rel="stylesheet" href="transportion.css">
+    <link rel="stylesheet" href="main.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="mainpage">
+         <header class="open" >
+            <div class="mainlogo">
+                    <img class="logoimg"src="logo.jpg" >
+            </div>
+            <div class="navitemsgroup">
+                <ul class="navitems">
+                    <li><a href="index.html"><ion-icon name="home"></ion-icon> Home</a></li>
+                    <li><a href="social.html"><i class="fa-solid fa-hands-holding-child"></i> Social commitment</a></li>
+                    <li><a href="alumini.html"><i class="fa-solid fa-user-graduate"> </i>Alumni</a></li>
+                    <li><a href="contactus.html"><ion-icon name="call"></ion-icon> Contact us</a></li>
+                    <li><a href="mainlogin.html"><ion-icon name="log-in-outline"></ion-icon> Login</a></li>   
+                </ul>
+            </div>
+            <ion-icon name="menu-outline" class="menutoggle"></ion-icon>
+        </header>
+        <script>
+            let navitems = document.querySelector('.menutoggle');        
+            let menutoggle =document.querySelector('.menutoggle');
+            let header = document.querySelector('header');
+            menutoggle.onclick =function(){
+                header.classList.toggle('open');
+            }
+        </script>
+        <!-- queries -->
+        <div class="maintransportionarea">
+            <!-- query banner -->
+            <div class="banner">
+                <div class="bannercontainer">
+                    <div class="title"><p>transportion</p></div>
+                    <div class="logo"> <i class="fa-solid fa-bus"></i></div>
+                </div>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            <a href="about.html">about</a>
+                        </li>
+                        <li>
+                            <p class="droptitle"onclick="dropdown1()">acheivements <i class="fa-solid fa-chevron-down"></i></p>
+                            <div id="dropmenu1"class="dropmenu">
+                              <ul class="dropmenucontent">
+                                <li><a href="10thclass.html">10<sup>th</sup>class</a></li>
+                              </ul>  
+                            </div>
+                        </li>
+                        <li>
+                            <p  class="droptitle" onclick="dropdown()">admissions <i  class="fa-solid fa-chevron-down"></i></p>
+                            <div id="dropmenu" class="dropmenu">
+                                <ul class="dropmenucontent">
+                                    <li><a href="addprocess.html">admissions process</a></li>
+                                    <li><a href="enquiry.html">Enquiry </a></li>
+                                </ul>
+                            </div>     
+                        </li>
+                        <li>
+                            <p  class="droptitle" onclick="dropdown2()" >events <i class="fa-solid fa-chevron-down"></i></p>
+                            <div id="dropmenu2"class="dropmenu">
+                                <ul class="dropmenucontent">
+                                    <a href="puttur.html">puttur</a>
+                                    <a href="tirupathi.html">tirupati</a>
+                                    <a href="srikalahasti.html">srikalahasthi</a>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <p  class="droptitle" onclick="dropdown3()">facilities  <i class="fa-solid fa-chevron-down"></i></p>
+                            <div id="dropmenu3"class="dropmenu">
+                                <ul class="dropmenucontent">
+                                    <a href="lab.html">lab</a>
+                                    <a href="library.html">library</a>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="sport.html">sports</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+             <script>
+                var value1=0
+                function dropdown(){
+                let adm =document.getElementById("dropmenu")
+                if(value1%2!=0){
+                    adm.style.display='none'
+                }
+                else{
+                    adm.style.display='block'
+                }
+                value1=value1+1
+                }
+                function dropdown1(){
+                let ach =document.getElementById("dropmenu1")
+                if(value1%2!=0){
+                    ach.style.display='none'
+                }
+                else{
+                    ach.style.display='block'
+                }
+                value1=value1+1
+                }
+                function dropdown2(){
+                let ev =document.getElementById("dropmenu2")
+                if(value1%2!=0){
+                    ev.style.display='none'
+                }
+                else{
+                    ev.style.display='block'
+                }
+                value1=value1+1
+                }
+                function dropdown3(){
+                let fa =document.getElementById("dropmenu3")
+                if(value1%2!=0){
+                    fa.style.display='none'
+                }
+                else{
+                    fa.style.display='block'
+                }
+                value1=value1+1
+                }
+             </script> 
+            <!-- querry banner completed -->
+             <!-- content -->
+             <div class="transportioncontent">
+                <div class="transportioncontainer">
+                    <div class="img"><img src="http://www.kkrgowtham.com/wp-content/themes/twentytwelve/images/transport.png" alt=""></div>
+                    <div class="content">
+                        <p>
+                            School Location Varma <sub>school of excellence</sub> an educational institution with a difference established in tirupathi, is a very aesthetically designed campus that is spread over 18 acres of land. The building has well ventilated and huge classrooms, Activity room, Technology centre, Audiovisual room, Gymnasium, Laboratories, Playpen, Swimming pool, Skating rink, play ground and excellent facilities for sports and games like Volleyball, Basket ball, Tennis and Cricket net practice and well equipped Library. The Campus is well maintained with beautiful landscapes, gardens and trees. In the in-house school farm crops and vegetables are grown, dairy farming, poultry farming and fish farming are also done here making the kitchen self-sufficient Separate hostel wingsfor boys and girls and efficient Security provisions make.
+
+
+                        </p>
+                        
+                         
+                    </div>
+                </div>
+             </div>
+        </div>
+        <!-- bottombar -->
+        <div class="bottombar">
+            <div class="barcontainer">
+                <div class="barhome">
+                    <h3>HOME</h3>
+                    <a href="social.html">Social commitment</a>
+                    <a href="contactusbranches.html"> Branches</a>
+                    <a href="contactusquery.html">queries\suggestions</a>
+                </div>
+                <div class="baradm"><h3>ADDMISSIONS</h3>
+                    <a href="addprocess.html">addmission process</a>
+                    <a href="enquiry.html"> Enquiry</a>
+                </div>
+                <div class="barabout">
+                    <h3>ABOUT</h3>
+                    <a href="about.html">about us</a>
+                </div>
+                <div class="barevent">
+                    <h3>EVENTS</h3>
+                    <a href="puttur.html">puttur</a>
+                    <a href="tirupathi.html">tirupati</a>
+                    <a href="srikalahasti.html">srikalahasthi</a>
+                </div>
+                <div class="barfac">
+                    <h3>facilities</h3>
+                    <a href="lab.html">lab</a>
+                    <a href="library.html">labrary</a>
+                </div>
+                <div class="barconnect">
+                    <h3>CONNECT WITH US</h3>
+                    <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/login?lang=en"><i class="fa-brands fa-square-twitter"></i></a>
+                    <a href="https://accounts.google.com/ServiceLogin?ltmpl=mobNH"><i class="fa-brands fa-square-google-plus"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&#169;<span>2015</span> VARMA <span>school of excellence</span></p>
+                
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+</html>
